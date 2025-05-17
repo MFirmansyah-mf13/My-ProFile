@@ -13,12 +13,20 @@
     --regularFont: poppins;
 
     /* FONT SIZE */
+    /* Desktop */
     --fontSmall: 10px;
     --fontBase: 14px;
     --fontLarge: 18px;
     --fontXL: 45px;
     --fontGiant: 96px;
     --fontHeading: 28px;
+    /* Mobile */
+    --fontSmall-mobile: 8px;
+    --fontBase-mobile: 12px;
+    --fontLarge-mobile: 16px;
+    --fontXL-mobile: 40px;
+    --fontGiant-mobile: 86px;
+    --fontHeading-mobile: 24px;
 
     /* FONT WEIGHT */
     --light: 300;
@@ -121,7 +129,35 @@ section {
 
 
 
-/* STYLING FOR BUTTON */
+/* STYLING FOR HEADING TEXT */
+h1 {
+    font-family: var(--mainFont);
+    font-size: var(--fontHeading);
+    font-weight: var(--semibold);
+    color: var(--primaryColor);
+}
+/* END */
+
+
+/* STYLING FOR HEROSECTION */
+#heroSection {
+    background-image: url(img_asset/HeroSectionWPV3.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3rem; /* Gunakan padding responsif */
+}
+
+#heroSection .container-hero {
+    text-align: center;  /* Memusatkan teks di dalam elemen */
+    width: 100%; /* Lebar kontainer */
+    max-width: 1200px;   
+    justify-content: center;
+}
+
 #heroSection .container-hero button {
     display: flex;
     justify-content: center;
@@ -146,40 +182,8 @@ section {
     color: var(--baseColor);
     background-color: var(--secondaryColor);
 }
-/* END */
 
-
-
-/* STYLING FOR HEADING TEXT */
-h1 {
-    font-family: var(--mainFont);
-    font-size: var(--fontHeading);
-    font-weight: var(--semibold);
-    color: var(--primaryColor);
-}
-/* END */
-
-
-/* STYLING FOR HEROSECTION */
-#heroSection {
-    background-image: url(img_asset/HeroSectionWPV3.jpg);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 3rem; /* Gunakan padding responsif */
-}
-
-.container-hero {
-    text-align: center;  /* Memusatkan teks di dalam elemen */
-    width: 100%; /* Lebar kontainer */
-    max-width: 1200px;   
-    justify-content: center;
-}
-
-.container-hero .mainHeroWording {
+#heroSection .container-hero .mainHeroWording {
     font-family: var(--mainFont);
     color: var(--primaryColor);
     font-size: var(--fontXL);
@@ -193,7 +197,7 @@ h1 {
     align-items: center;
 }
 
-.container-hero .alterHeroWording {
+#heroSection .container-hero .alterHeroWording {
     font-family: var(--regularFont);
     color: var(--secondaryColor);
     font-size: var(--fontLarge);
@@ -583,6 +587,16 @@ h1 {
     margin-left: 65px;
 }
 
+/* .container-footer p {
+    font-size: var(--fontBase);
+    background: -webkit-linear-gradient(#043554, #b4ced0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-weight: var(--regular);
+    text-align: center;
+    margin-top: 150px;
+} */
+
 .container-footer ul li {
     display: inline-block;
     margin-right: 20px;
@@ -613,10 +627,88 @@ h1 {
     align-items: center; /* Rata tengah vertikal */
     text-align: center;
     margin-top: 10%;
-    padding: 40px;
+    /* padding: 40px; */
+}
+/* END */
+
+
+
+/* STYLING FOR HERO SECTION-MOBILE */
+#heroSection-mobile {
+    background-image: url(img_asset/mobile/HeroSection-Mobile.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    /* padding: 3rem; Gunakan padding responsif */
 }
 
-.mobile-view h2{
+#heroSection-mobile .container-hero {
+    text-align: center;  /* Memusatkan teks di dalam elemen */
+    width: 100%; /* Lebar kontainer */
+    max-width: 1200px;   
+    justify-content: center;
+}
+
+#heroSection-mobile .container-hero button {
+    display: flex;
+    justify-content: center;
+    margin-left: 27%;
+    padding-top: 12px;
+    padding-bottom: 33px;
+    padding-right: 35px;
+    padding-left: 40px;
+    height: 30px;
+    font-family: var(--regularFont);
+    font-weight: var(--regular);
+    font-size: var(--fontBase);
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#heroSection-mobile .container-hero button:active {
+    color: var(--baseColor);
+    background-color: var(--secondaryColor);
+}
+
+#heroSection-mobile .container-hero .mainHeroWording {
+    font-family: var(--mainFont);
+    color: var(--primaryColor);
+    font-size: var(--fontXL-mobile);
+    font-weight: var(--light);
+    margin-top: 185px;
+    /* margin-left: -250px; */
+    /* width: 800px;              /* Mengatur lebar agar teks terbungkus */
+    line-height: 1.5;          /* Mengatur tinggi baris untuk memberi jarak antar baris */
+    overflow-wrap: break-word; /* Membuat teks terputus saat mencapai batas lebar */
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+#heroSection-mobile .container-hero .alterHeroWording {
+    font-family: var(--regularFont);
+    color: var(--secondaryColor);
+    font-size: var(--fontLarge-mobile);
+    font-weight: var(--semibold);
+    margin-top: -50px;
+    /* margin-left: -250px; */
+    /* width: 800px;              /* Mengatur lebar agar teks terbungkus */
+    line-height: 1.5;          /* Mengatur tinggi baris untuk memberi jarak antar baris */
+    overflow-wrap: break-word; /* Membuat teks terputus saat mencapai batas lebar */
+    margin-bottom: 40px;
+}
+/* END */
+
+
+
+/* STYLING FOR CONSTRUCTION UI */
+/* .mobile-view h2{
     font-family: var(--mainFont);
     font-size: var(--fontHeading);
     text-align: center;
@@ -644,21 +736,8 @@ h1 {
     width: 300px;
     height: auto;
     opacity: 70%;
-}
-
-.mobile-view button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.mobile-view button:hover {
-    background-color: #0056b3;
-}
+} */
+/* END */
 
 /* Media Query: Jika lebar layar kurang dari 768px (mode mobile) */
 @media screen and (max-width: 768px) {
