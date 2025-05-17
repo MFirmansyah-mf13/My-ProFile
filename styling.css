@@ -650,7 +650,7 @@ h1 {
     width: 100%; /* Lebar kontainer */
     max-width: 1200px;   
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 #heroSection-mobile .container-hero button {
