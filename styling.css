@@ -1,7 +1,7 @@
 /* STYLING VARIABLE */
 :root {
     /* COLOR SCHEME */
-    --baseColor: #EBF6FF;
+    --baseColor: #F3F9FF;
     --primaryColor: #043554;
     --secondaryColor: #027BCE;
     --blackColor: #474747;
@@ -39,7 +39,7 @@
 
 
 
-/* STYLING FOR WHOLE BODY */
+/* STYLING FOR WHOLE BODY DESKTOP VIEW*/
 html,
 body {
     scroll-behavior: smooth;
@@ -50,6 +50,11 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.desktop-view {
+    display: block;
+    /* padding: 20px; */
 }
 /* END */
 
@@ -148,7 +153,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 3rem; /* Gunakan padding responsif */
+    /* padding: 3rem; Gunakan padding responsif */
 }
 
 #heroSection .container-hero {
@@ -156,6 +161,7 @@ h1 {
     width: 100%; /* Lebar kontainer */
     max-width: 1200px;   
     justify-content: center;
+    margin-top: 4%;
 }
 
 #heroSection .container-hero button {
@@ -254,14 +260,14 @@ h1 {
     }
 }
 
-.container-about {
+#aboutSection .container-about {
     text-align: center;  /* Memusatkan teks di dalam elemen */
     width: 70%; /* Lebar kontainer */
     max-width: 1200px;   
     justify-content: center;
 }
 
-.container-about .aboutMe {
+#aboutSection .container-about .aboutMe {
     margin-top: 90px;
     /* margin-left: -410px; */
     /* width: 380%; */
@@ -269,7 +275,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.container-about .aboutMe p {
+#aboutSection .container-about .aboutMe p {
     margin-top: -10px;
     font-family: var(--regularFont);
     font-size: var(--fontBase);
@@ -277,14 +283,14 @@ h1 {
     color: var(--blackColor);
 }
 
-.container-about .aboutMe p span {
+#aboutSection .container-about .aboutMe p span {
     font-family: var(--regularFont);
     font-size: var(--fontBase);
     font-weight: var(--semibold);
     color: var(--secondaryColor);
 }
 
-.container-about .aboutMe img {
+#aboutSection .container-about .aboutMe img {
     margin-top: -30px;
     width: 120px;
     height: auto;
@@ -292,12 +298,12 @@ h1 {
     object-fit: cover;
 }
 
-.container-about .skills {
+#aboutSection .container-about .skills {
     margin-top: 20px;
     overflow: hidden;
 }
 
-.container-about .skills .skills-carousel {
+#aboutSection .container-about .skills .skills-carousel {
     display: flex;
     animation: scroll 30s linear infinite; /* Animasi scroll terus-menerus */
     align-items: flex-end; /* Menyelaraskan gambar rata ke bawah container */
@@ -312,7 +318,7 @@ h1 {
     }
 }
 
-.container-about .skills img {
+#aboutSection .container-about .skills img {
     width: 40px;
     height: auto;
     padding: 20px;
@@ -323,7 +329,7 @@ h1 {
 
 
 /* STYLING FOR EXPERIENCESECTION */
-#experienceSection {
+#experienceSection  {
     background-image: url(img_asset/experienceSection.png);
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -339,7 +345,7 @@ h1 {
     padding: 3rem; /* Gunakan padding responsif */
 }
 
-.container-exp {
+#experienceSection .container-exp {
     text-align: center;  /* Memusatkan teks di dalam elemen */
     width: 70%;        /* Lebar kontainer */
     max-width: 1200px;
@@ -347,7 +353,7 @@ h1 {
     /* justify-content: center; */
 }
 
-.container-exp .list-exp {
+#experienceSection .container-exp .list-exp {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -358,7 +364,7 @@ h1 {
     /* margin: auto; */
 }
 
-.container-exp .list-exp .line {
+#experienceSection .container-exp .list-exp .line {
     position: absolute;
     top: 36%;
     /* width: 100%; */
@@ -369,7 +375,7 @@ h1 {
     z-index: -1;
 }
 
-.container-exp .list-exp .dot-container {
+#experienceSection .container-exp .list-exp .dot-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -380,7 +386,7 @@ h1 {
     margin-left: -20px;
 }
 
-.container-exp .list-exp .dot-container .dot {
+#experienceSection .container-exp .list-exp .dot-container .dot {
     width: 24px;
     height: 24px;
     background-color: var(--baseColor);
@@ -393,7 +399,7 @@ h1 {
     z-index: 1;
 }
 
-.container-exp .list-exp .dot-container .dot::after {
+#experienceSection .container-exp .list-exp .dot-container .dot::after {
     content: "";
     width: 19px;
     height: 19px;
@@ -405,18 +411,18 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.container-exp .list-exp .dot-container .text {
+#experienceSection .container-exp .list-exp .dot-container .text {
     width: 350px;
     word-wrap: break-word;
     font-size: var(--fontBase);
 }
 
-.container-exp .list-exp .dot-container .text.top {
+#experienceSection .container-exp .list-exp .dot-container .text.top {
     margin-bottom: 10px;
     color: var(--blackColor);
 }
 
-.container-exp .list-exp .dot-container .text.bottom {
+#experienceSection .container-exp .list-exp .dot-container .text.bottom {
     margin-top: 20px;
     font-size: var(--fontBase);
     font-family: var(--regularFont);
@@ -424,11 +430,11 @@ h1 {
     color: var(--secondaryColor);
 }
 
-.container-exp .list-exp .dot-container .text.bottom a {
+#experienceSection .container-exp .list-exp .dot-container .text.bottom a {
     color: var(--secondaryColor);
 }
 
-.expDetail {
+#experienceSection .expDetail {
     display: none;
     position: absolute;
     background-color: var(--secondaryColor);
@@ -452,17 +458,17 @@ h1 {
     display: block;
 }
 
-.container-exp p {
+#experienceSection .container-exp p {
     margin-top: 180px;
 }
 
-.container-exp p a {
+#experienceSection .container-exp p a {
     font-size: var(--fontBase);
     color: var(--neutralColor);
     font-weight: var(--regular);
 }
 
-.container-exp p a:after {
+#experienceSection .container-exp p a:after {
     content: '';
     display: block;
     margin: auto;
@@ -472,12 +478,12 @@ h1 {
     transition: width .5s ease, background-color .5s ease;
 }
 
-.container-exp p a:hover {
+#experienceSection .container-exp p a:hover {
     font-weight: var(--medium);
     color: var(--primaryColor);
 }
 
-.container-exp p a:hover:after {
+#experienceSection .container-exp p a:hover:after {
     width: 10%;
     background: var(--primaryColor);
     margin-top: 4px;
@@ -506,7 +512,7 @@ h1 {
     padding: 3rem; /* Gunakan padding responsif */
 }
 
-.container-porto {
+#portfolioSection .container-porto {
     text-align: center;  /* Memusatkan teks di dalam elemen */
     width: 70%;        /* Lebar kontainer */
     max-width: 1200px;
@@ -514,7 +520,7 @@ h1 {
     /* justify-content: center; */
 }
 
-.container-porto h1 {
+#portfolioSection .container-porto h1 {
     font-family: var(--mainFont);
     font-size: var(--fontGiant);
     color: var(--primaryColor);
@@ -522,7 +528,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-.container-porto a {
+#portfolioSection .container-porto a {
     margin-bottom: -100px;
     font-family: var(--regularFont);
     font-size: var(--fontHeading);
@@ -530,7 +536,7 @@ h1 {
     font-weight: var(--light);
 }
 
-.container-porto a:after {
+#portfolioSection .container-porto a:after {
     content: '';
     display: block;
     margin: auto;
@@ -540,12 +546,12 @@ h1 {
     transition: width .5s ease, background-color .5s ease;
 }
 
-.container-porto a:hover {
+#portfolioSection .container-porto a:hover {
     font-weight: var(--medium);
     color: var(--secondaryColor);
 }
 
-.container-porto a:hover:after {
+#portfolioSection .container-porto a:hover:after {
     width: 50%;
     background: var(--secondaryColor);
     margin-top: 4px;
@@ -571,14 +577,14 @@ h1 {
     padding: 3rem; /* Gunakan padding responsif */
 }
 
-.container-footer {
+#footerSection .container-footer {
     width: 70%;        /* Lebar kontainer */
     max-width: 1200px;
-    margin-top: 120px;
+    margin-top: 50px;
     /* justify-content: center; */
 }
 
-.container-footer h1 {
+#footerSection .container-footer h1 {
     font-family: var(--mainFont);
     font-size: var(--fontHeading);
     color: var(--primaryColor);
@@ -587,27 +593,17 @@ h1 {
     margin-left: 65px;
 }
 
-/* .container-footer p {
-    font-size: var(--fontBase);
-    background: -webkit-linear-gradient(#043554, #b4ced0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    font-weight: var(--regular);
-    text-align: center;
-    margin-top: 150px;
-} */
-
-.container-footer ul li {
+#footerSection .container-footer ul li {
     display: inline-block;
     margin-right: 20px;
     list-style-type: none;
 }
 
-.container-footer ul li i {
+#footerSection .container-footer ul li i {
     color: var(--primaryColor);
 }
 
-.container-footer ul li i:hover {
+#footerSection .container-footer ul li i:hover {
     color: var(--secondaryColor);
 }
 
@@ -616,11 +612,6 @@ h1 {
 
 
 /* STYLING FOR MOBILEVIEW */
-.desktop-view {
-    display: block;
-    padding: 20px;
-}
-
 .mobile-view {
     display: none;
     justify-content: center; /* Rata tengah horizontal */
