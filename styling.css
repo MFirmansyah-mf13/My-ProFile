@@ -493,7 +493,6 @@ h1 {
 
 
 
-
 /* STYLING FOR PORTFOLIOSECTION */
 #portfolioSection {
     background-color: var(--whiteColor);
@@ -561,7 +560,6 @@ h1 {
 
 
 
-
 /* STYLING FOR FOOTERSECTION */
 #footerSection {
     min-height: 30vh;
@@ -608,6 +606,10 @@ h1 {
 }
 
 
+
+/* ≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋
+    ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  ✧⃝   MOBILE DEV SCRIPT ✧⃝  
+    ≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋ */
 
 
 
@@ -694,6 +696,306 @@ h1 {
     line-height: 1.5;          /* Mengatur tinggi baris untuk memberi jarak antar baris */
     overflow-wrap: break-word; /* Membuat teks terputus saat mencapai batas lebar */
     margin-bottom: 40px;
+}
+/* END */
+
+
+/* STYLING FOR ABOUT SECTION-MOBILE */
+#aboutSection-mobile {
+    background-image: url(img_asset/AboutSectionWPV2.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    /* width: 100%;
+    max-width: 1200px; */
+    padding: 3rem; /* Gunakan padding responsif */
+}
+
+
+#aboutSection-mobile #bouncyArrow {
+    /* transform-origin: */
+    /* position: relative; */
+    /* z-index: 500; */
+    margin-top: 30px;
+    /* height: 100vh; */
+    /* margin-left: 22px; */
+    animation: bounce 3s infinite ease-in-out;
+    color: var(--neutralColor);
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(-20px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Back to initial position */
+    }
+}
+
+#aboutSection-mobile .container-about {
+    text-align: center;  /* Memusatkan teks di dalam elemen */
+    width: 90%; /* Lebar kontainer */
+    max-width: 1200px;   
+    justify-content: center;
+}
+
+#aboutSection-mobile .container-about .aboutMe {
+    margin-top: 90px;
+    /* margin-left: -410px; */
+    /* width: 380%; */
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+#aboutSection-mobile .container-about .aboutMe p {
+    margin-top: -5px;
+    font-family: var(--regularFont);
+    font-size: var(--fontBase-mobile);
+    font-weight: var(--regular);
+    color: var(--blackColor);
+    text-align: justify;
+}
+
+#aboutSection-mobile .container-about .aboutMe p span {
+    font-family: var(--regularFont);
+    font-size: var(--fontBase-mobile);
+    font-weight: var(--semibold);
+    color: var(--secondaryColor);
+}
+
+#aboutSection-mobile .container-about .aboutMe img {
+    margin-top: -20px;
+    width: 120px;
+    height: auto;
+    padding: 20px;
+    object-fit: cover;
+}
+
+#aboutSection-mobile .container-about .skills {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#aboutSection-mobile .container-about .skills .skills-carousel {
+    display: flex;
+    animation: scroll 30s linear infinite; /* Animasi scroll terus-menerus */
+    align-items: flex-end; /* Menyelaraskan gambar rata ke bawah container */
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+#aboutSection-mobile .container-about .skills img {
+    width: 40px;
+    height: auto;
+    padding: 20px;
+    object-fit: cover;
+}
+/* END */
+
+
+
+/* STYLING FOR EXPERIENCE SECTION-MOBILE */
+#experienceSection-mobile  {
+    background-image: url(img_asset/mobile/experienceSection-Mobile.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* text-align: center; */
+    margin: 0 auto;
+    margin-top: -200px;
+    /* width: 100%;
+    max-width: 1200px; */
+    padding: 3rem; /* Gunakan padding responsif */
+}
+
+#experienceSection-mobile .container-exp {
+    text-align: center;  /* Memusatkan teks di dalam elemen */
+    width: 70%;        /* Lebar kontainer */
+    max-width: 1200px;
+    margin-top: 70px;
+    /* justify-content: center; */
+}
+
+#experienceSection-mobile .container-exp .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin-left: -35%;
+    margin-top: 80px;
+}
+
+/* Vertical line */
+#experienceSection-mobile .container-exp .timeline::before {
+    content: '';
+    position: absolute;
+    left: 31px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--primaryColor);
+}
+
+#experienceSection-mobile .container-exp .timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+/* Dot */
+#experienceSection-mobile .container-exp .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: 16px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--secondaryColor);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 0 2px var(--primaryColor);
+}
+
+#experienceSection-mobile .container-exp .timeline-content {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+ #experienceSection-mobile .container-exp .timeline-title {
+    font-size: var(--fontLarge-mobile);
+    font-family: var(--regularFont);
+    font-weight: var(--regular);
+    color: var(--primaryColor);
+}
+
+#experienceSection-mobile .container-exp .timeline-date {
+    font-size: var(--fontBase-mobile);
+    font-family: var(--regularFont);
+    font-weight: var(--regular);
+    color: var(--neutralColor);
+    margin-top: 10px;
+}
+
+#experienceSection-mobile .container-exp p {
+    margin-top: 150px;
+}
+
+#experienceSection-mobile .container-exp p a {
+    font-size: var(--fontBase);
+    color: var(--neutralColor);
+    font-weight: var(--regular);
+}
+
+#experienceSection-mobile .container-exp p a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+#experienceSection-mobile .container-exp p a:hover {
+    font-weight: var(--medium);
+    color: var(--primaryColor);
+}
+
+#experienceSection-mobile .container-exp p a:hover:after {
+    width: 10%;
+    background: var(--primaryColor);
+    margin-top: 4px;
+
+}
+/* END */
+
+
+
+/* STYLING FOR PORTFOLIOSECTION */
+#portfolioSection-mobile {
+    background-color: var(--whiteColor);
+    background-image: url(img_asset/mobile/portoSection-Mobile.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* text-align: center; */
+    margin: 0 auto;
+    /* width: 100%;
+    max-width: 1200px; */
+    padding: 3rem; /* Gunakan padding responsif */
+}
+
+#portfolioSection .container-porto {
+    text-align: center;  /* Memusatkan teks di dalam elemen */
+    width: 70%;        /* Lebar kontainer */
+    max-width: 1200px;
+    margin-top: 120px;
+    /* justify-content: center; */
+}
+
+#portfolioSection .container-porto h1 {
+    font-family: var(--mainFont);
+    font-size: var(--fontGiant);
+    color: var(--primaryColor);
+    font-weight: var(--semibold);
+    margin-bottom: 15px;
+}
+
+#portfolioSection .container-porto a {
+    margin-bottom: -100px;
+    font-family: var(--regularFont);
+    font-size: var(--fontHeading);
+    color: var(--secondaryColor);
+    font-weight: var(--light);
+}
+
+#portfolioSection .container-porto a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+#portfolioSection .container-porto a:hover {
+    font-weight: var(--medium);
+    color: var(--secondaryColor);
+}
+
+#portfolioSection .container-porto a:hover:after {
+    width: 50%;
+    background: var(--secondaryColor);
+    margin-top: 4px;
+
 }
 /* END */
 
